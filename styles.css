@@ -1,0 +1,39 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.trend-indicator {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.timer-container {
+    position: relative;
+    margin-left: 10px;
+}
+
+.timer-container span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}

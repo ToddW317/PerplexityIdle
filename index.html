@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Gatherer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Resource Gatherer</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Gold: <span id="gold">0</span></h2>
+                        <div class="row mt-4">
+                            <div class="col-md-3">
+                                <h3>Wood: <span id="wood">0</span></h3>
+                                <button id="gatherWood" class="btn btn-success mb-2">Gather Wood</button>
+                                <div class="price-container">
+                                    <span id="woodPrice">1.00</span>
+                                    <div class="timer-container">
+                                        <svg width="20" height="20">
+                                            <circle id="woodTimer" cx="10" cy="10" r="9" fill="none" stroke="#ccc" stroke-width="2"></circle>
+                                        </svg>
+                                        <span id="woodCountdown">10</span>
+                                    </div>
+                                </div>
+                                <button id="sellWood" class="btn btn-outline-success">Sell Wood</button>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Stone: <span id="stone">0</span></h3>
+                                <button id="gatherStone" class="btn btn-secondary mb-2">Gather Stone</button>
+                                <div class="price-container">
+                                    <span id="stonePrice">1.00</span>
+                                    <div class="timer-container">
+                                        <svg width="20" height="20">
+                                            <circle id="stoneTimer" cx="10" cy="10" r="9" fill="none" stroke="#ccc" stroke-width="2"></circle>
+                                        </svg>
+                                        <span id="stoneCountdown">10</span>
+                                    </div>
+                                </div>
+                                <button id="sellStone" class="btn btn-outline-secondary">Sell Stone</button>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Iron: <span id="iron">0</span></h3>
+                                <button id="gatherIron" class="btn btn-dark mb-2">Gather Iron</button>
+                                <div class="price-container">
+                                    <span id="ironPrice">1.00</span>
+                                    <div class="timer-container">
+                                        <svg width="20" height="20">
+                                            <circle id="ironTimer" cx="10" cy="10" r="9" fill="none" stroke="#ccc" stroke-width="2"></circle>
+                                        </svg>
+                                        <span id="ironCountdown">10</span>
+                                    </div>
+                                </div>
+                                <button id="sellIron" class="btn btn-outline-dark">Sell Iron</button>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Food: <span id="food">0</span></h3>
+                                <button id="gatherFood" class="btn btn-warning mb-2">Gather Food</button>
+                                <div class="price-container">
+                                    <span id="foodPrice">1.00</span>
+                                    <div class="timer-container">
+                                        <svg width="20" height="20">
+                                            <circle id="foodTimer" cx="10" cy="10" r="9" fill="none" stroke="#ccc" stroke-width="2"></circle>
+                                        </svg>
+                                        <span id="foodCountdown">10</span>
+                                    </div>
+                                </div>
+                                <button id="sellFood" class="btn btn-outline-warning">Sell Food</button>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h3>Upgrades</h3>
+                            <button id="upgradeGathering" class="btn btn-info">Upgrade Gathering (Cost: 50 Gold)</button>
+                            <p>Gathering Level: <span id="gatheringLevel">1</span></p>
+                        </div>
+                        <div class="mt-4">
+                            <h3>Resource Generators</h3>
+                            <div class="row">
+                                <div class="col-md-3 mb-2">
+                                    <button id="buyWoodMill" class="btn btn-outline-success">Buy Wood Mill (100 Gold)</button>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <button id="buyStoneQuarry" class="btn btn-outline-secondary">Buy Stone Quarry (200 Gold)</button>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <button id="buyIronMine" class="btn btn-outline-dark">Buy Iron Mine (300 Gold)</button>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <button id="buyFarm" class="btn btn-outline-warning">Buy Farm (150 Gold)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
